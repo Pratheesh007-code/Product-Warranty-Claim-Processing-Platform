@@ -1,0 +1,102 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#6a11cb);
+    background-size:400% 400%;
+    animation:bg 12s ease infinite;
+    min-height:100vh;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.card{
+    background:rgba(255,255,255,.12)!important;
+    backdrop-filter:blur(15px);
+    border:none!important;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.5);
+}
+
+.btn{
+    border-radius:30px!important;
+    transition:.3s!important;
+    font-weight:bold;
+}
+
+.btn:hover{
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+.navbar{
+    background:rgba(0,0,0,.4)!important;
+    backdrop-filter:blur(10px);
+}
+
+table{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+thead{
+    background:#0d6efd;
+    color:white;
+}
+
+tbody tr:hover{
+    background:#dbeafe;
+}
+
+h1,h2,h3,h4,h5,label,p{
+    color:white!important;
+}
+
+.card-header{
+    background:rgba(255,255,255,.2)!important;
+    color:white!important;
+}
+
+.form-control,
+.form-select,
+textarea{
+    border-radius:15px!important;
+}
+
+footer{
+    background:rgba(0,0,0,.4)!important;
+    color:white;
+}
+/* Improve link visibility */
+a{
+    color:#ffffff !important;
+    font-weight:bold;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+a:hover{
+    color:#ffd700 !important;
+    text-decoration:underline;
+}
+/* Make navbar buttons visible */
+.navbar .btn-light{
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.navbar .btn-light:hover{
+    color: #fff !important;
+    background-color: #0d6efd !important;
+}

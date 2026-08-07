@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Dashboard</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+
+</head>
+
+<body class="bg-light">
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-dark bg-primary">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold">
+            Product Warranty Claim Processing Platform
+        </a>
+
+        <a href="/logout" class="btn btn-danger">
+            Logout
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- Welcome -->
+
+<div class="container mt-5">
+
+    <div class="text-center">
+
+        <h2>
+            Welcome {{ name }}
+        </h2>
+
+        <p class="text-muted">
+            Manage your products and warranty claims from one place.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Dashboard Cards -->
+
+<div class="container mt-4">
+
+    <div class="row g-4">
+
+        <div class="col-md-6">
+
+            <div class="card shadow">
+
+                <div class="card-body text-center">
+
+                    <h4>📦 Register Product</h4>
+
+                    <p>Add a new product to your account.</p>
+
+                    <a href="/add_product" class="btn btn-success">
+                        Open
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="card shadow">
+
+                <div class="card-body text-center">
+
+                    <h4>📋 View Products</h4>
+
+                    <p>See all your registered products.</p>
+
+                    <a href="/view_products" class="btn btn-primary">
+                        Open
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="card shadow">
+
+                <div class="card-body text-center">
+
+                    <h4>🛡 Warranty Status</h4>
+
+                    <p>Check Active or Expired warranties.</p>
+
+                    <a href="/warranty_status" class="btn btn-warning">
+                        Open
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="card shadow">
+
+                <div class="card-body text-center">
+
+                    <h4>📝 Warranty Claim</h4>
+
+                    <p>Submit a warranty claim for your product.</p>
+
+                    <a href="/claim" class="btn btn-info">
+                        Open
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-white text-center p-3 mt-5">
+
+    © 2026 Product Warranty Claim Processing Platform
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+</body>
+
+</html>

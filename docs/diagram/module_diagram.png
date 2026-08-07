@@ -1,0 +1,21 @@
+User
+
+│
+
+├── Login
+
+├── Register
+
+├── Product Registration
+
+├── Warranty Status
+
+└── Warranty Claim
+
+↓
+
+Admin
+
+↓
+
+Approve / Reject Claims

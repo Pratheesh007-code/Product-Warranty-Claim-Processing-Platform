@@ -1,0 +1,34 @@
+Users
+---------
+user_id (PK)
+name
+email
+phone
+password
+
+        │
+
+        ▼
+
+Products
+------------
+product_id (PK)
+user_id (FK)
+product_name
+brand
+model
+serial_number
+purchase_date
+warranty_months
+
+        │
+
+        ▼
+
+Claims
+------------
+claim_id (PK)
+product_id (FK)
+reason
+description
+status

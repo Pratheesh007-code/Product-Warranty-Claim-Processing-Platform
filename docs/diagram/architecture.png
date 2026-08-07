@@ -1,0 +1,10 @@
+               User
+                 │
+                 ▼
+         HTML + Bootstrap
+                 │
+                 ▼
+              Flask
+                 │
+                 ▼
+             MySQL Database
